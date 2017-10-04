@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Glazzed Admin Theme :: Documentation</title>
+	
+	<link rel="icon" sizes="192x192" href="img/touch-icon.png" /> 
+	<link rel="apple-touch-icon" href="img/touch-icon-iphone.png" /> 
+	<link rel="apple-touch-icon" sizes="76x76" href="img/touch-icon-ipad.png" /> 
+	<link rel="apple-touch-icon" sizes="120x120" href="img/touch-icon-iphone-retina.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon-ipad-retina.png" />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="css/prism.css">
+</head>
+<body class="docs">
+	<div id="loading">
+		<div class="loader loader-light loader-large"></div>
+	</div>
+	<header class="top-bar">
+		
+		<div class="main-brand">
+			<div class="main-brand__container">
+				<a href="index.html" class="main-logo"><img src="img/logo.png"></a>
+			</div>
+		</div>
+		
+	</header> <!-- /top-bar -->
+
+
+	<div class="wrapper">
+
+		
+		<section class="content">
+			<header class="main-header">
+				<div class="main-header__nav">
+					<h1 class="main-header__title">
+						<i class="pe-7f-home"></i>
+						<span>Documentation</span>
+					</h1>
+					<ul class="main-header__breadcrumb">
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="#" onclick="return false;">Docs</a></li>
+					</ul>
+				</div>
+				
+				<div class="main-header__date">
+						<input type="radio" id="radio_date_1" name="tab-radio" value="intro" checked><!--
+					--><label for="radio_date_1" class="btn-md">Intro</label><!--
+					--><input type="radio" id="radio_date_2" name="tab-radio" value="comps"><!--
+					--><label for="radio_date_2" class="btn-md">Components</label><!--
+					--><input type="radio" id="radio_date_3" name="tab-radio" value="libs"><!--
+					--><label for="radio_date_3" class="btn-md">Libraries</label><!--
+					--><input type="radio" id="radio_date_4" name="tab-radio" value="lic"><!--
+					--><label for="radio_date_4" class="btn-md">License</label>
+				</div>
+			</header> <!-- /main-header -->
+
+			<div data-tab-radio="tab-radio" class="tab-radio-content row" id="intro">
+				
+				<div class="row">
+					
+					<div class="col-md-6">
+						<h3 class="main-stats__title">Glazzed Admin template</h3>
+						<p class="main-stats__resume">A fresh new admin template with a very modern feel reminiscent of the new blurred and translucent UI paradigm. It will beautifully complement any iOS app web dashboard admin panel for instance.</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+					
+					<div class="col-md-5">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7f-network"></i><h3>File Structure</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"><i class="pe-7f-refresh"></i></a>
+									<a href="#"><i class="pe-7s-close"></i></a>
+								</div>
+							</header>
+
+							<div class="widget__content filled">
+								<p>Important: If you need to add some custom CSS, do not use the <code class="language-markup">style.css</code> file but for instance the <code class="language-markup">yourname-custom.css</code> file (rename, add css, link it) to avoid loosing your customization when upgrading to a newer version of Glazzed.</p><br>
+								<p>You also could modify directly the SASS files to compile your custom Glazzed project.</p>
+								<br>
+								<ul class="file-structure">
+									<li><i class="pe-7f-file"></i> index.html</li>
+									<li><i class="pe-7f-file"></i> docs.html</li>
+									<li><i class="pe-7f-file"></i> ui.html</li>
+									<li><i class="pe-7f-file"></i> 404.html</li>
+									<li><i class="pe-7f-file"></i> login.html</li>
+									<li><i class="pe-7f-file"></i> grid.html</li>
+									<li><i class="pe-7f-file"></i> tables.html</li>
+									<li><i class="pe-7f-file"></i> stats.html</li>
+
+									<li class="sub open"><i class="pe-7f-folder"></i> css
+										<ul class="sub-ul">
+											<li><i class="pe-7f-file"></i> bootstrap.min.css </li>
+											<li><i class="pe-7f-file"></i> bootstrap.css </li>
+											<li><i class="pe-7f-file"></i> main.min.css </li>
+											<li><i class="pe-7f-file"></i> main.css </li>
+											<li><i class="pe-7f-file"></i> prism.css </li>
+										</ul>
+									</li>
+
+									<li class="sub"><i class="pe-7f-folder"></i> fonts
+										<ul class="sub-ul">
+											<li><i class="pe-7f-file"></i> Pe-icon-7-filled.eot </li>
+											<li><i class="pe-7f-file"></i> Pe-icon-7-filled.svg </li>
+											<li><i class="pe-7f-file"></i> Pe-icon-7-filled.ttf </li>
+											<li><i class="pe-7f-file"></i> Pe-icon-7-filled.woff </li>
+											<li><i class="pe-7f-file"></i> Pe-icon-7-stroke.eot </li>
+											<li><i class="pe-7f-file"></i> Pe-icon-7-stroke.svg </li>
+											<li><i class="pe-7f-file"></i> Pe-icon-7-stroke.ttf </li>
+											<li><i class="pe-7f-file"></i> Pe-icon-7-stroke.woff </li>
+										</ul>
+									</li>
+
+									<li class="sub"><i class="pe-7f-folder"></i> img
+										<ul class="sub-ul">
+											<li><i class="pe-7f-file"></i> bg.jpg </li>
+											<li><i class="pe-7f-file"></i> logo.png </li>
+											<li><i class="pe-7f-file"></i> logo_trim.png </li>
+											<li><i class="pe-7f-file"></i> post1.jpg </li>
+											<li><i class="pe-7f-file"></i> post2.jpg </li>
+											<li><i class="pe-7f-file"></i> post3.jpg </li>
+											<li><i class="pe-7f-file"></i> profile.jpg </li>
+											<li><i class="pe-7f-file"></i> user1.jpg </li>
+											<li><i class="pe-7f-file"></i> user2.jpg </li>
+											<li><i class="pe-7f-file"></i> user3.jpg </li>
+											<li><i class="pe-7f-file"></i> user4.jpg </li>
+											<li><i class="pe-7f-file"></i> touch-icon-ipad-retina.png </li>
+											<li><i class="pe-7f-file"></i> touch-icon-ipad.png </li>
+											<li><i class="pe-7f-file"></i> touch-icon-iphone-retina.png </li>
+											<li><i class="pe-7f-file"></i> touch-icon-iphone.png </li>
+											<li><i class="pe-7f-file"></i> touch-icon.png </li>
+											<li><i class="pe-7f-file"></i> favico.ico </li>
+										</ul>
+									</li>
+
+									<li class="sub open"><i class="pe-7f-folder"></i> js
+										<ul class="sub-ul">
+											<li class="sub"><i class="pe-7f-folder"></i> amcharts </li>
+											<li><i class="pe-7f-file"></i> chart.js </li>
+											<li><i class="pe-7f-file"></i> charts.js </li>
+											<li><i class="pe-7f-file"></i> main.js </li>
+											<li><i class="pe-7f-file"></i> main.min.js </li>
+											<li><i class="pe-7f-file"></i> prism.js </li>
+										</ul>
+									</li>
+								</ul>
+
+							</div>
+						</article><!-- /widget -->
+					</div>
+
+					<div class="col-md-7">
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7f-browser"></i><h3>HTML Structure</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"><i class="pe-7f-refresh"></i></a>
+									<a href="#"><i class="pe-7s-close"></i></a>
+								</div>
+							</header>
+
+							<div class="widget__content filled"><pre><code class="language-markup">&lt;body&gt;
+	&lt;div&nbsp;id=&quot;loading&quot;&gt;
+		...
+	&lt;/div&gt;
+	&lt;header&nbsp;class=&quot;top-bar&quot;&gt;
+		&lt;!--&nbsp;profile,&nbsp;main-search,&nbsp;main-brand&nbsp;--&gt;
+	&lt;/header&gt;
+	&lt;div&nbsp;class=&quot;wrapper&quot;&gt;
+		&lt;aside&nbsp;class=&quot;sidebar&quot;&gt;
+			&lt;div&nbsp;class=&quot;user-info&quot;&gt;
+				&lt;!--&nbsp;user-info&nbsp;--&gt;
+			&lt;/div&gt;
+			&lt;ul&nbsp;class=&quot;main-nav&quot;&gt;
+				&lt;li&nbsp;class=&quot;main-nav--active&quot;&gt;
+					&lt;!--&nbsp;active-section&nbsp;--&gt;
+				&lt;/li&gt;
+				&lt;li&nbsp;class=&quot;main-nav--collapsible&quot;&gt;
+					&lt;ul&nbsp;class=&quot;main-nav__submenu&quot;&gt;
+						&lt;!--&nbsp;submenu&nbsp;--&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				...
+			&lt;/ul&gt;
+		&lt;/aside&gt;
+		&lt;section&nbsp;class=&quot;content&quot;&gt;
+			&lt;header&nbsp;class=&quot;main-header&quot;&gt;
+			&lt;/header&gt;
+			&lt;div&nbsp;class=&quot;row&quot;&gt;
+				&lt;div&nbsp;class=&quot;col-md-7&quot;&gt;
+					&lt;article&nbsp;class=&quot;widget&quot;&gt;
+						&lt;header&nbsp;class=&quot;widget__header&quot;&gt;
+							&lt;!--&nbsp;Widget title and configs buttons&nbsp;--&gt;
+						&lt;/header&gt;
+						&lt;div&nbsp;class=&quot;widget__content&quot;&gt;
+							&lt;!--&nbsp;Widget content&nbsp;--&gt;
+						&lt;/div&gt;
+					&lt;/article&gt;
+				&lt;/div&gt;
+
+				&lt;div&nbsp;class=&quot;col-md-5&quot;&gt;
+					&lt;article&nbsp;class=&quot;widget&quot;&gt;
+						&lt;header&nbsp;class=&quot;widget__header&quot;&gt;
+							&lt;!--&nbsp;Widget title and configs buttons&nbsp;--&gt;
+						&lt;/header&gt;
+						&lt;div&nbsp;class=&quot;widget__content&quot;&gt;
+							&lt;!--&nbsp;Widget content&nbsp;--&gt;
+						&lt;/div&gt;
+					&lt;/article&gt;
+				&lt;/div&gt;
+			&lt;/div&gt; &lt;!--&nbsp;/row&nbsp;--&gt;
+			
+			&lt;!--&nbsp;All other rows, col-s and widgets of the page &nbsp;--&gt;
+			
+			&lt;footer&nbsp;class=&quot;footer-brand&quot;&gt;
+				&lt;!--&nbsp;footer&nbsp;stuff&nbsp;--&gt;
+			&lt;/footer&gt;
+
+		&lt;/section&gt;
+	&lt;/div&gt; &lt;!--&nbsp;/wrapper&nbsp;--&gt;
+&lt;/body&gt;
+</code></pre>
+							</div>
+
+						</article><!-- /widget -->
+						<article class="widget__content filled bgs">
+							<p>Glazzed also let you change the blurred background easily. Just add one of this classes to the <code class="language-markup">&lt;body&gt;</code> tag: <a href="docs.html?bg=1">bg1</a>, <a href="docs.html?bg=2">bg2</a>, <a href="docs.html?bg=3">bg3</a>, <a href="docs.html?bg=4">bg4</a></code>.
+							You could also change it dynamically just adding <code class="language-markup">?bg=1</code> as a parameter at the end of any url of the template. In this example, 1 adds the <code class="language-markup">.bg1</code> class to the <code class="language-markup">&lt;body&gt;</code>.</p>
+						</article>
+					</div>
+
+				</div>
+
+				
+
+			</div> <!-- row -->
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div data-tab-radio="tab-radio" class="tab-radio-content row" id="comps">
+					
+
+					<div class="row">
+						<div class="col-md-5">
+							<article class="widget">
+								<header class="widget__header">
+									<div class="widget__title">
+										<i class="pe-7f-albums"></i><h3>Widget container</h3>
+									</div>
+									<div class="widget__config">
+										<a href="#"><i class="pe-7f-refresh"></i></a>
+										<a href="#"><i class="pe-7s-close"></i></a>
+									</div>
+								</header>
+
+								<div class="widget__content filled">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio illo alias maxime necessitatibus omnis, ea cum aspernatur quam, repellat nesciunt eum molestias possimus tempore, dignissimos mollitia fugit neque perferendis enim! Aut illum suscipit sed iure sunt eos, debitis fugiat, accusamus tempora nesciunt, eveniet corporis repellat delectus nemo explicabo atque et vel dolor magni ipsum tempore adipisci. Doloribus, expedita error blanditiis deserunt accusantium alias omnis sapiente laborum, distinctio fugit, corrupti quibusdam vitae consectetur adipisci necessitatibus. Dolorum iste dolore quod natus necessitatibus, totam nostrum ab, ut, iusto placeat consequatur accusantium. Voluptatum, unde.</p>
+								</div>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">
+&lt;article class=&quot;widget&quot;&gt;
+	&lt;header class=&quot;widget__header&quot;&gt;
+		&lt;div class=&quot;widget__title&quot;&gt;
+			&lt;i class=&quot;pe-7*-icon&quot;&gt;&lt;/i&gt;&lt;h3&gt;Widget container&lt;/h3&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;widget__config&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;pe-7*-icon&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;pe-7*-icon&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;widget__content filled&quot;&gt;
+		&lt;!-- content --&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+							</code></pre>
+						</div>
+					</div>
+
+					<div class="row">
+						
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Alert dismissible</h3>
+						</div>
+
+						<div class="col-md-5">
+							
+							<article class="widget">
+								<div class="alert alert-fixed alert-success alert-dismissible" role="alert">
+								  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true"><i class="pe-7s-close"></i></span><span class="sr-only">Close</span></button>
+								  <div class="alert__icon pull-left">
+								  	<i class="pe-7s-check"></i>
+								  </div>
+								  <p class="alert__text"> Success! The page has been...</p>
+								</div>
+								
+								<div class="alert alert-fixed alert-warning alert-dismissible" role="alert">
+								  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true"><i class="pe-7s-close"></i></span><span class="sr-only">Close</span></button>
+								  <div class="alert__icon pull-left">
+								  	<i class="pe-7s-attention"></i>
+								  </div>
+								  <p class="alert__text"> Warning! Your monthly<br> traffic...</p>
+								</div>
+							</article>
+						
+						</div>
+						<div class="col-md-7">
+							<pre><code class="language-markup">
+&lt;div class=&quot;alert alert-fixed alert-success alert-dismissible&quot; role=&quot;alert&quot;&gt;
+	&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;
+		&lt;span aria-hidden=&quot;true&quot;&gt;&lt;i class=&quot;pe-7s-close&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+	&lt;/button&gt;
+	&lt;div class=&quot;alert__icon pull-left&quot;&gt;
+		&lt;i class=&quot;pe-7s-check&quot;&gt;&lt;/i&gt;
+	&lt;/div&gt;
+	&lt;p class=&quot;alert__text&quot;&gt; Success! The page has been...&lt;/p&gt;
+&lt;/div&gt;
+							</code></pre>
+
+						</div> <!-- /code -->
+
+					</div> <!-- / alert -->
+
+					
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Switch</h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+							
+
+								<div class="widget__content filled">
+									<input type="checkbox" id="s-1" class="sw" checked />
+									<label class="switch blue" for="s-1"></label> 
+									<input type="checkbox" id="s-2" class="sw" checked />
+									<label class="switch" for="s-2"></label>
+									<input type="checkbox" id="s-3" class="sw" checked />
+									<label class="switch violet" for="s-3"></label> 
+									<input type="checkbox" id="s-4" class="sw" checked />
+									<label class="switch orange" for="s-4"></label> 
+									<input type="checkbox" id="s-5" class="sw" checked />
+									<label class="switch yellow" for="s-5"></label> 
+									<input type="checkbox" id="s-6" class="sw" checked />
+									<label class="switch red" for="s-6"></label> 
+									<input type="checkbox" id="s-7" class="sw" />
+									<label class="switch" for="s-7"></label> 
+									<input type="checkbox" id="s-8" class="sw" disabled />
+									<label class="switch" for="s-8"></label> 
+								</div>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;input type=&quot;checkbox&quot; id=&quot;switch-1&quot; class=&quot;sw&quot; checked /&gt;
+&lt;label class=&quot;switch blue&quot; for=&quot;switch-1&quot;&gt;&lt;/label&gt; 
+
+&lt;input type=&quot;checkbox&quot; id=&quot;switch-2&quot; class=&quot;sw&quot; checked /&gt;
+&lt;label class=&quot;switch green&quot; for=&quot;switch-2&quot;&gt;&lt;/label&gt; 
+							</code></pre>
+						</div>
+					
+					</div>
+
+
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Switch2</h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+							
+
+								<div class="widget__content filled">
+									<input type="checkbox" id="s2-2" class="sw" checked />
+									<label class="switch2 blue" for="s2-2"></label> 
+									<input type="checkbox" id="s2-1" class="sw" checked />
+									<label class="switch2 green" for="s2-1"></label> 
+									<input type="checkbox" id="s2-3" class="sw" checked />
+									<label class="switch2 violet" for="s2-3"></label> 
+									<input type="checkbox" id="s2-4" class="sw" checked />
+									<label class="switch2 orange" for="s2-4"></label> 
+									<input type="checkbox" id="s2-5" class="sw" checked />
+									<label class="switch2 yellow" for="s2-5"></label> 
+									<input type="checkbox" id="s2-6" class="sw" checked />
+									<label class="switch2 red" for="s2-6"></label> 
+									<input type="checkbox" id="s2-7" class="sw" />
+									<label class="switch2 green" for="s2-7"></label>
+									<input type="checkbox" id="s2-8" class="sw" disabled />
+									<label class="switch2 orange" for="s2-8"></label> 
+								</div>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;input type=&quot;checkbox&quot; id=&quot;switch-3&quot; class=&quot;sw&quot; checked /&gt;
+&lt;label class=&quot;switch2 blue&quot; for=&quot;switch-3&quot;&gt;&lt;/label&gt; 
+
+&lt;input type=&quot;checkbox&quot; id=&quot;switch-4&quot; class=&quot;sw&quot; checked /&gt;
+&lt;label class=&quot;switch2 green&quot; for=&quot;switch-4&quot;&gt;&lt;/label&gt; 
+							</code></pre>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Buttons</h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+							
+
+								<div class="widget__content filled btn__showcase2 text-center">
+									<button class="btn blue">Blue</button>
+									<button class="btn green">Green</button>
+									<button class="btn violet">Violet</button>
+									<button class="btn orange">Orange</button>
+									<button class="btn yellow">Yellow</button>
+									<button class="btn red">Red</button>
+									<button class="btn white">White</button>
+									<button class="btn dark">Dark</button>
+
+									<button class="btn orange" disabled>Orange disabled</button>
+
+									<button class="btn blue inverse">Blue</button>
+									<button class="btn green inverse">Green</button>
+									<button class="btn violet inverse">Violet</button>
+									<button class="btn orange inverse">Orange</button>
+									<button class="btn yellow inverse">Yellow</button>
+									<button class="btn red inverse">Red</button>
+									<button class="btn white inverse">White</button>
+									<button class="btn dark inverse">Dark</button>
+
+									<button class="btn yellow inverse" disabled>Inverse disabled</button>
+
+									<button class="btn white">
+										Blue badge
+										<span class="badge badge--blue">122</span>
+									</button>
+									<button class="btn white">
+										Red badge
+										<span class="badge badge--red">16</span>
+									</button>
+								</div>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;button class=&quot;btn blue&quot;&gt;Blue&lt;/button&gt;
+&lt;button class=&quot;btn green&quot;&gt;Blue&lt;/button&gt;
+&lt;!-- also: violet, orange, yellow, red, white, dark --&gt;
+
+&lt;button class=&quot;btn orange&quot; disabled&gt;Orange disabled&lt;/button&gt;
+
+&lt;button class=&quot;btn blue inverse&quot;&gt;Blue&lt;/button&gt;
+&lt;button class=&quot;btn green inverse&quot;&gt;Green&lt;/button&gt;
+
+&lt;button class=&quot;btn yellow inverse&quot; disabled&gt;Inverse disabled&lt;/button&gt;
+
+&lt;button class=&quot;btn white&quot;&gt;
+	Blue badge &lt;span class=&quot;badge badge--blue&quot;&gt;122&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&quot;btn white&quot;&gt;
+	Red badge &lt;span class=&quot;badge badge--red&quot;&gt;16&lt;/span&gt;
+&lt;/button&gt;
+							</code></pre>
+						</div>
+					
+					</div>
+
+
+
+
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Button sizes</h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+							
+
+								<div class="widget__content filled btn__showcase2 text-center">
+									<button class="btn blue btn-xs">Button xs</button>
+									<button class="btn blue btn-sm">Button sm</button><br>
+									<button class="btn blue btn-md">Button md</button>
+									<button class="btn blue btn-lg">Button lg</button>
+									
+								</div>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;button class=&quot;btn blue btn-xs&quot;&gt;Button xs&lt;/button&gt;
+&lt;button class=&quot;btn blue btn-sm&quot;&gt;Button sm&lt;/button&gt;
+&lt;button class=&quot;btn blue btn-md&quot;&gt;Button md&lt;/button&gt;
+&lt;button class=&quot;btn blue btn-lg&quot;&gt;Button lg&lt;/button&gt;
+							</code></pre>
+						</div>
+					
+					</div>
+
+
+
+
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Button groups</h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+							
+
+								<div class="widget__content filled btn-vars__showcase text-center">
+									<div class="btn-group block">
+									  <a type="button" class="btn red">Red 1</a>
+									  <a type="button" class="btn red">Red 2</a>
+									  <a type="button" class="btn red">Red 3</a>
+									</div>
+									<br>
+									<div class="btn-group block">
+										<a type="button" class="btn red">Stop</a>
+										<a type="button" class="btn yellow">Attention</a>
+										<a type="button" class="btn green">Go!</a>
+									</div>
+									<br>
+									<div class="btn-group block">
+										<a type="button" class="btn inverse red">Stop</a>
+										<a type="button" class="btn inverse yellow">Attention</a>
+										<a type="button" class="btn inverse green">Go!</a>
+									</div>
+
+									<div class="dropdown open">
+										  <button class="btn btn-block violet dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">
+										    Violet Dropdown
+										    <span class="caret">
+										    	<i style="content:url(img/arrow.svg); width: 13px; height: 12px;"></i>
+										    </span>
+										  </button>
+										  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+										    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Image Gallery</a></li>
+										    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Latest Features</a></li>
+										    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact Us</a></li>
+										  </ul>
+										</div>
+								</div>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;div class=&quot;btn-group block&quot;&gt;
+	&lt;a type=&quot;button&quot; class=&quot;btn red&quot;&gt;Red 1&lt;/a&gt;
+	&lt;a type=&quot;button&quot; class=&quot;btn red&quot;&gt;Red 2&lt;/a&gt;
+	&lt;a type=&quot;button&quot; class=&quot;btn red&quot;&gt;Red 3&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group block&quot;&gt;
+	&lt;a type=&quot;button&quot; class=&quot;btn inverse red&quot;&gt;Stop&lt;/a&gt;
+	&lt;a type=&quot;button&quot; class=&quot;btn inverse yellow&quot;&gt;Attention&lt;/a&gt;
+	&lt;a type=&quot;button&quot; class=&quot;btn inverse green&quot;&gt;Go!&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dropdown open&quot;&gt;
+	&lt;button class=&quot;btn btn-block violet dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu2&quot; data-toggle=&quot;dropdown&quot;&gt; Violet Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;
+	&lt;/button&gt;
+	&lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu2&quot;&gt;
+		&lt;li role=&quot;presentation&quot;&gt;&lt;/li&gt;
+		&lt;li role=&quot;presentation&quot;&gt;&lt;/li&gt;
+		&lt;li role=&quot;presentation&quot;&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+							</code></pre>
+						</div>
+					
+					</div>
+
+
+
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Pe Icon circle </h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+							
+
+								<div class="widget__content filled btn__showcase text-center">
+									<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-voicemail"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-wallet"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-tools"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-star"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-server"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-science"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-power"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-plane"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-paint"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-play"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-moon"></i></a>
+									<a href="#" onclick="return false;" class="btn-circle btn-sm blue">
+											<i class="pe-7f-menu"></i>
+										</a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm green"><i class="pe-7f-map-marker"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm violet"><i class="pe-7f-help2"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm orange"><i class="pe-7f-lock"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm yellow"><i class="pe-7f-expand"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm inverse blue"><i class="pe-7f-config"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm inverse green"><i class="pe-7f-camera"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm inverse violet"><i class="pe-7f-box"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm inverse orange"><i class="pe-7f-alarm"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm inverse yellow"><i class="pe-7f-ball"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm inverse red"><i class="pe-7f-users"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm">
+											<i class="pe-7f-alarm"></i>
+											<span class="badge badge--blue">1</span>
+										</a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm">
+											<i class="pe-7f-share"></i>
+											<span class="badge badge--green">2</span>
+										</a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm">
+											<i class="pe-7f-paper-plane"></i>
+											<span class="badge badge--violet">3</span>
+										</a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm">
+											<i class="pe-7f-like"></i>
+											<span class="badge badge--orange">4</span>
+										</a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm">
+											<i class="pe-7f-like2"></i>
+											<span class="badge badge--yellow">5</span>
+										</a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm">
+											<i class="pe-7f-network"></i>
+											<span class="badge badge--red">6</span>
+										</a>
+										<br>
+										<a href="#" onclick="return false;" class="btn-circle btn-xs"><i class="pe-7f-wallet"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-sm"><i class="pe-7f-wallet"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-md"><i class="pe-7f-wallet"></i></a>
+										<a href="#" onclick="return false;" class="btn-circle btn-lg"><i class="pe-7f-wallet"></i></a>
+								</div>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;a class=&quot;btn-circle btn-sm&quot;&gt;&lt;i class=&quot;pe-7f-voicemail&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;btn-circle btn-sm&quot;&gt;&lt;i class=&quot;pe-7f-wallet&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;!-- colored --&gt;
+&lt;a class=&quot;btn-circle btn-sm blue&quot;&gt;&lt;i class=&quot;pe-7f-menu&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;!-- inverse --&gt;
+&lt;a class=&quot;btn-circle btn-sm inverse blue&quot;&gt;&lt;i class=&quot;pe-7f-config&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;!-- with badge --&gt;
+&lt;a class=&quot;btn-circle btn-sm&quot;&gt;&lt;i class=&quot;pe-7f-alarm&quot;&gt;&lt;/i&gt;
+	&lt;span class=&quot;badge badge--blue&quot;&gt;8&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;!-- same Bootstrap button sizes --&gt;
+&lt;a class=&quot;btn-circle btn-xs&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;btn-circle btn-sm&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;btn-circle btn-md&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;btn-circle btn-lg&quot;&gt;&lt;/a&gt;
+							</code></pre>
+						</div>
+					
+					</div>
+
+
+					
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Custom radio &amp; checkbox</h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+							
+
+								<div class="widget__content filled btn__showcase text-center">
+									<input type="radio" class="custom-radio" name="c-radio" id="cr1">
+									<label for="cr1" class="red"></label>
+									<input type="radio" class="custom-radio" name="c-radio" id="cr2" checked>
+									<label for="cr2" class="red"></label>
+									&nbsp;&nbsp;&nbsp;
+											<input type="radio" class="custom-radio" name="c-radio-2" id="cr4" checked>
+											<label for="cr4" class="violet"></label>
+											<input type="radio" class="custom-radio" name="c-radio-2" id="cr5">
+											<label for="cr5" class="violet"></label>
+&nbsp;&nbsp;&nbsp;
+											<input type="radio" class="custom-radio" name="c-radio-4" id="cr9" checked>
+											<label for="cr9" class="orange"></label>
+											<input type="radio" class="custom-radio" name="c-radio-4" id="cr10">
+											<label for="cr10" class="orange"></label>
+<br><br>
+											<input type="radio" class="custom-radio" name="c-radio-3" id="cr6">
+											<label for="cr6" class="red"></label>
+											<input type="radio" class="custom-radio" name="c-radio-3" id="cr7" checked>
+											<label for="cr7" class="yellow"></label>
+											<input type="radio" class="custom-radio" name="c-radio-3" id="cr8">
+											<label for="cr8" class="green"></label>
+<br><br><br><br>
+									<input type="checkbox" class="custom-checkbox" id="cc1">
+											<label for="cc1"></label>
+											<input type="checkbox" class="custom-checkbox" id="cc2" checked>
+											<label for="cc2"></label>
+								</div>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;input type=&quot;radio&quot; class=&quot;custom-radio&quot; name=&quot;c-radio&quot; id=&quot;cr1&quot;&gt;
+&lt;label for=&quot;cr1&quot; class=&quot;red&quot;&gt;&lt;/label&gt;
+&lt;input type=&quot;radio&quot; class=&quot;custom-radio&quot; name=&quot;c-radio&quot; id=&quot;cr2&quot; checked&gt;
+&lt;label for=&quot;cr2&quot; class=&quot;red&quot;&gt;&lt;/label&gt;
+
+&lt;input type=&quot;checkbox&quot; class=&quot;custom-checkbox&quot; id=&quot;cc1&quot;&gt;
+&lt;label for=&quot;cc1&quot;&gt;&lt;/label&gt;
+							</code></pre>
+						</div>
+					
+					</div>
+
+
+					
+
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Full Style Form</h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget widget__form">
+									<input type="text" placeholder="Full name">
+									<input type="text" placeholder="Email">
+									<button onclick="return false;">Apply</button>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;article class=&quot;widget widget__form&quot;&gt;
+
+	&lt;input type=&quot;text&quot; placeholder=&quot;Full name&quot;&gt;
+	&lt;input type=&quot;text&quot; placeholder=&quot;Promotion code&quot;&gt;
+	&lt;input type=&quot;text&quot; placeholder=&quot;Email&quot;&gt;
+	&lt;button onclick=&quot;return false;&quot;&gt;Apply&lt;/button&gt;
+	...
+&lt;/article&gt;
+							</code></pre>
+						</div>
+					</div>
+
+
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Full Labeled Form </h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget widget__form">
+								<label for="input-1" class="stacked-label"><i class="pe-7f-user"></i></label><input type="text" class="stacked-input" id="input-1" placeholder="Name">
+								<label for="input-2" class="stacked-label"><i class="pe-7f-portfolio"></i></label><input type="text" class="stacked-input" id="input-2" placeholder="Company">
+								<label class="full-label">
+									<input type="file" id="file-att">
+									<i class="pe-7f-paperclip"></i><span class="label">Attachment</span>
+								</label><button onclick="return false;">Send</button>
+							</article><!-- /widget -->
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;article class=&quot;widget widget__form&quot;&gt;
+	&lt;label for=&quot;input-1&quot; class=&quot;stacked-label&quot;&gt;&lt;i class=&quot;pe-7f-user&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+	&lt;input type=&quot;text&quot; class=&quot;stacked-input&quot; id=&quot;input-1&quot; placeholder=&quot;Name&quot;&gt;
+	&lt;label for=&quot;input-2&quot; class=&quot;stacked-label&quot;&gt;&lt;i class=&quot;pe-7f-portfolio&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+	&lt;input type=&quot;text&quot; class=&quot;stacked-input&quot; id=&quot;input-2&quot; placeholder=&quot;Company&quot;&gt;
+	&lt;label class=&quot;full-label&quot;&gt;
+		&lt;input type=&quot;file&quot; id=&quot;file-att&quot;&gt;
+		&lt;i class=&quot;pe-7f-paperclip&quot;&gt;&lt;/i&gt;
+		&lt;span class=&quot;label&quot;&gt;Attachment&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;button onclick=&quot;return false;&quot;&gt;Send&lt;/button&gt;
+&lt;/article&gt;
+							</code></pre>
+						</div>
+					</div>
+
+
+
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Members Media Objects</h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+							<div class="media message checked">
+										<figure class="pull-left rounded-image message__img">
+											<img class="media-object" src="img/user4.jpg" alt="user">
+										</figure>
+										<div class="media-body">
+											<h4 class="media-heading message__heading">Full Name</h4>
+											<p class="message__location">
+												<i class="pe-7f-map-marker"></i>  Location (meta)
+											</p>
+
+											<a class="c-btn--check"></a>
+											<input type="checkbox" class="btn-more-check" id="more1" checked>
+											<label class="c-btn--more" for="more1"></label>
+
+											<div class="message__details">
+												<table>
+													<tr>
+														<td>Email:</td>
+														<td>info@contact.com</td>
+													</tr>
+													<tr>
+														<td>Site:</td>
+														<td>www.companyname.com</td>
+													</tr>
+													<tr>
+														<td>Company:</td>
+														<td>CompanyName</td>
+													</tr>
+													<tr>
+														<td>Plan:</td>
+														<td>Premium</td>
+													</tr>
+													<tr>
+														<td>Messages:</td>
+														<td><span class="badge badge--line badge--blue">16</span></td>
+													</tr>
+												</table>
+											</div>
+
+										</div>
+									</div>
+
+							</article>
+
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;div class=&quot;media message checked&quot;&gt;
+	&lt;figure class=&quot;pull-left rounded-image message__img&quot;&gt;
+		&lt;img class=&quot;media-object&quot; src=&quot;img/user4.jpg&quot; alt=&quot;user&quot;&gt;
+	&lt;/figure&gt;
+	&lt;div class=&quot;media-body&quot;&gt;
+		&lt;h4 class=&quot;media-heading message__heading&quot;&gt;Full Name&lt;/h4&gt;
+		&lt;p class=&quot;message__location&quot;&gt;
+			&lt;i class=&quot;pe-7f-map-marker&quot;&gt;&lt;/i&gt; Location (meta)
+		&lt;/p&gt;
+		&lt;a class=&quot;c-btn--check&quot;&gt;&lt;/a&gt;
+		&lt;input type=&quot;checkbox&quot; class=&quot;btn-more-check&quot; id=&quot;more1&quot; checked&gt;
+		&lt;label class=&quot;c-btn--more&quot; for=&quot;more1&quot;&gt;&lt;/label&gt;
+		&lt;div class=&quot;message__details&quot;&gt;
+			&lt;table&gt;
+			&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;...
+			&lt;/table&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+							</code></pre>
+						</div>
+					</div>
+
+
+
+
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Messages Media Objects</h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+									<div class="media message tabs">
+												<figure class="pull-left rounded-image message__img">
+													<img class="media-object" src="img/user1.jpg" alt="user">
+												</figure>
+												<div class="media-body">
+													<h4 class="media-heading message__heading">Full Name  <span>source / date</span></h4>
+													<p class="message__msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, consequuntur, inventore. Facilis vitae repellat assumenda repellendus nemo tempora possimus illum neque ut voluptatem quibusdam suscipit eius sapiente laudantium reiciendis iusto iste officiis saepe incidunt perferendis quae, aperiam autem quas eum, quia. Beatae dolor voluptatibus odio modi. Quos libero iusto ipsa culpa expedita veritatis sapiente modi placeat sunt? Natus dolores perferendis recusandae vel et cupiditate repudiandae pariatur, odio, neque, reprehenderit asperiores fuga. Eveniet, possimus expedita officiis. Inventore distinctio placeat assumenda possimus magni modi eius facere quos quibusdam pariatur sunt, mollitia saepe consectetur, obcaecati culpa at. Quos maiores perspiciatis nihil, minus eos!</p>
+													<input type="checkbox" class="msg-o" id="msg-o4" checked>
+													<label class="message__controls--opener" for="msg-o4"><i class="pe-7s-note"></i></label>
+													<div class="message__controls--cont">
+														<ul class="message__controls">
+															<li><a href="#" onclick="return false;"><i class="pe-7f-back pe-rotate-180"></i> <span>Reply</span></a></li>
+															<li><a href="#" class="set_fav" onclick="return false;"><i class="pe-7f-star"></i> <span>Favorite</span></a></li>
+															<li><a href="#" onclick="return false;"><i class="pe-7f-trash"></i> <span>Delete</span></a></li>
+															<li><a href="#" class="close_cntrl" onclick="return false;"><i style="content:url(img/arrow.svg); width: 15px; height: 15px;"></i></a></li>
+														</ul>
+													</div> 
+												</div>
+											</div> <!-- /message -->
+							</article>
+
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;div class=&quot;media message tabs&quot;&gt;
+	&lt;figure class=&quot;pull-left rounded-image message__img&quot;&gt;
+		&lt;img class=&quot;media-object&quot; src=&quot;img/user1.jpg&quot; alt=&quot;user&quot;&gt;
+	&lt;/figure&gt;
+	&lt;div class=&quot;media-body&quot;&gt;
+		&lt;h4 class=&quot;media-heading message__heading&quot;&gt;Full Name  
+			&lt;span&gt;source / date&lt;/span&gt;
+		&lt;/h4&gt;
+		&lt;p class=&quot;message__msg&quot;&gt;message...&lt;/p&gt;
+		&lt;input type=&quot;checkbox&quot; class=&quot;msg-o&quot; id=&quot;msg-o4&quot; checked&gt;
+		&lt;label class=&quot;message__controls--opener&quot; for=&quot;msg-o4&quot;&gt;
+			&lt;i class=&quot;pe-7s-note&quot;&gt;&lt;/i&gt;
+		&lt;/label&gt;
+		&lt;div class=&quot;message__controls--cont&quot;&gt;
+			&lt;ul class=&quot;message__controls&quot;&gt;
+				&lt;li&gt;&lt;a&gt;
+					&lt;i class=&quot;pe-7f-back pe-rotate-180&quot;&gt;&lt;/i&gt;&lt;span&gt;Reply&lt;/span&gt;
+				&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a class=&quot;set_fav&quot;&gt;
+					&lt;i class=&quot;pe-7f-star&quot;&gt;&lt;/i&gt; &lt;span&gt;Favorite&lt;/span&gt;
+				&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a &gt;
+					&lt;i class=&quot;pe-7f-trash&quot;&gt;&lt;/i&gt; &lt;span&gt;Delete&lt;/span&gt;
+				&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a class=&quot;close_cntrl&quot;&gt;
+					&lt;i class=&quot;pe-7f-arrow-up&quot;&gt;&lt;/i&gt;
+				&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt; 
+	&lt;/div&gt;
+&lt;/div&gt;
+							</code></pre>
+						</div>
+					</div>
+
+					
+					<div class="row">
+
+						<div class="col-md-7 col-md-offset-5">
+							<h3 class="docs-title">Custom Radio Tabs </h3>
+						</div>
+
+						<div class="col-md-5">
+							<article class="widget">
+								<div class="tab-radio-full">
+									<input type="radio" id="tab_radio_1" name="tab-radio-2" value="tabr1" checked><!--
+								--><label for="tab_radio_1" class="btn-md">Step 1</label><!--
+								--><input type="radio" id="tab_radio_2" name="tab-radio-2" value="tabr2" ><!--
+								--><label for="tab_radio_2" class="btn-md">Step 2</label><!--
+								--><input type="radio" id="tab_radio_3" name="tab-radio-2" value="tabr3"><!--
+								--><label for="tab_radio_3" class="btn-md">Step 3</label><!--
+								--><input type="radio" id="tab_radio_4" name="tab-radio-2" value="tabr4"><!--
+								--><label for="tab_radio_4" class="btn-md">Final step</label>
+								</div>
+								<div data-tab-radio="tab-radio-2" class="tab-radio-content" id="tabr1">
+									<article class="widget__form">
+										<label for="input-1" class="stacked-label"><i class="pe-7f-user"></i></label><input type="text" class="stacked-input" id="input-1" placeholder="Name">
+										<label for="input-2" class="stacked-label"><i class="pe-7f-portfolio"></i></label><input type="text" class="stacked-input" id="input-2" placeholder="Company">
+									</article><!-- /widget -->
+								</div>
+								<div data-tab-radio="tab-radio-2" class="tab-radio-content" id="tabr2">
+									<article class="widget__form">
+										<label for="input-1" class="stacked-label"><i class="pe-7f-phone"></i></label><input type="text" class="stacked-input" id="input-1" placeholder="Phone number">
+										<label for="input-2" class="stacked-label"><i class="pe-7f-mail"></i></label><input type="text" class="stacked-input" id="input-2" placeholder="Email">
+									</article><!-- /widget -->
+								</div>
+								<div data-tab-radio="tab-radio-2" class="tab-radio-content" id="tabr3">
+									<article class="widget__form">
+										<label for="input-1" class="stacked-label"><i class="pe-7f-home"></i></label><input type="text" class="stacked-input" id="input-1" placeholder="Address">
+										<label for="input-2" class="stacked-label"><i class="pe-7f-credit"></i></label><input type="text" class="stacked-input" id="input-2" placeholder="Credit card">
+									</article><!-- /widget -->
+								</div>
+								<div data-tab-radio="tab-radio-2" class="tab-radio-content" id="tabr4">
+									<article class="widget__form">
+										<button onclick="return false;">Send</button>
+									</article><!-- /widget -->
+								</div>
+							</article><!-- /widget -->
+							
+							<hr>
+
+							<div class="text-center">
+								<input type="radio" id="tab_radio2_1" name="tab-radio-3" value="tabr2-1"><!--
+								--><label for="tab_radio2_1" class="btn-xs">Quote 1</label><!--
+								--><input type="radio" id="tab_radio2_2" name="tab-radio-3" value="tabr2-2" checked><!--
+								--><label for="tab_radio2_2" class="btn-xs">Quote 2</label><!--
+								--><input type="radio" id="tab_radio2_3" name="tab-radio-3" value="tabr2-3"><!--
+								--><label for="tab_radio2_3" class="btn-xs">Quote 3</label>
+							
+								<blockquote data-tab-radio="tab-radio-3" class="tab-radio-content pad20" id="tabr2-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere assumenda, doloribus mollitia ipsam nemo amet, commodi ullam cumque veritatis quidem repellendus. Minima, sit, modi.</blockquote>
+								<blockquote data-tab-radio="tab-radio-3" class="tab-radio-content pad20" id="tabr2-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus impedit blanditiis eaque a iusto similique nobis fugiat, commodi fugit omnis, numquam sed beatae tempora iste recusandae nam placeat. Fuga atque, tenetur molestiae dolorem doloremque similique enim reprehenderit ex aliquam quisquam.</blockquote>
+								<blockquote data-tab-radio="tab-radio-3" class="tab-radio-content pad20" id="tabr2-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quisquam quas tenetur vero, ratione repellendus aperiam repudiandae accusantium reiciendis deserunt dicta rerum adipisci, quis aspernatur, fugiat illum corrupti dignissimos quae!</blockquote>
+							
+							</div>
+						
+						</div>
+
+						<div class="col-md-7 pad20">
+<pre><code class="language-markup">&lt;div class=&quot;tab-radio-full&quot;&gt;
+	&lt;input type=&quot;radio&quot; id=&quot;tab_radio_1&quot; name=&quot;tab-radio-2&quot; value=&quot;tabr1&quot; checked&gt;
+	&lt;label for=&quot;tab_radio_1&quot; class=&quot;btn-md&quot;&gt;Step 1&lt;/label&gt;
+	&lt;input type=&quot;radio&quot; id=&quot;tab_radio_2&quot; name=&quot;tab-radio-2&quot; value=&quot;tabr2&quot; &gt;&lt;
+	&lt;label for=&quot;tab_radio_2&quot; class=&quot;btn-md&quot;&gt;Step 2&lt;/label&gt;
+	...
+&lt;/div&gt; &lt;!--&nbsp;/tab-radio-full (only for full width)&nbsp;--&gt;
+
+&lt;div data-tab-radio=&quot;tab-radio-2&quot; class=&quot;tab-radio-content&quot; id=&quot;tabr1&quot;&gt;
+	&lt;!--&nbsp;tab 1 content&nbsp;--&gt;
+&lt;/div&gt;
+&lt;div data-tab-radio=&quot;tab-radio-2&quot; class=&quot;tab-radio-content&quot; id=&quot;tabr2&quot;&gt;
+	&lt;!--&nbsp;tab 2 content&nbsp;--&gt;
+&lt;/div&gt;
+...
+
+&lt;!--&nbsp;sizes for label :: .btn-xs, .btn-sm, .btn-md, .btn-lg&nbsp;--&gt;
+
+							</code></pre>
+						</div>
+					</div>
+
+
+
+				</div> <!-- row :: #comps -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div data-tab-radio="tab-radio" class="tab-radio-content" id="libs">
+					
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7f-bookmarks"></i><h3>Libraries</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"><i class="pe-7f-refresh"></i></a>
+									<a href="#"><i class="pe-7s-close"></i></a>
+								</div>
+							</header>
+
+							<div class="widget__content filled">
+								<p>Here are all the dependencies that Glazzed uses for different scopes. <br>
+								We recommend to include the .css files inside the <code class="language-markup">&lt;head&gt;</code> tag and the .js files before the closing of the <code class="language-markup">&lt;body&gt;</code> tag</p>
+								<hr>
+								<p>Twitter Bootstrap <a href="http://getbootstrap.com/">Official website</a></p>
+								<p><code class="language-markup">&lt;link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"&gt;</code></p>
+								<p><code class="language-markup">&lt;script type="text/javascript" src="js/bootstrap.js"&gt;&lt;script&gt;</code></p>
+								<br>
+								<p>jQuery 1.11.1 <a href="http://jquery.com/">Official website</a></p>
+								<p><code class="language-markup">&lt;script type="text/javascript" src="js/jquery-1.11.1.min.js"&gt;&lt;script&gt;</code></p>
+								<br>
+								<p>jQueryUI <a href="http://jqueryui.com/">Official website</a></p>
+								<p><code class="language-markup">&lt;script type="text/javascript" src="js/jquery-ui.js"&gt;&lt;script&gt;</code></p>
+								<br>
+								<p>AmCharts v3 <a href="http://www.amcharts.com/">Official website</a></p>
+								<p><code class="language-markup">js/amcharts/* &lt;!-- all files and folders at this location --&gt;</code></p>
+								<br>
+								<p>@font-face Pe-icon-7-filled <a href="http://themes-pixeden.com/font-demos/7-filled/index.html">Package website</a></p>
+								<p>@font-face Pe-icon-7-stroke <a href="http://themes-pixeden.com/font-demos/7-stroke/index.html">Package website</a></p>
+								<p>@font-face Pe-icon-glazzed <span class="comment">(Extra icons for demo purposes)</span></p>
+								<br>
+							</div>
+						</article><!-- /widget -->
+					
+
+
+				</div> <!-- row -->
+
+
+				
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div data-tab-radio="tab-radio" class="tab-radio-content" id="lic">
+					
+						<article class="widget">
+							<header class="widget__header">
+								<div class="widget__title">
+									<i class="pe-7f-note"></i><h3>License</h3>
+								</div>
+								<div class="widget__config">
+									<a href="#"><i class="pe-7f-refresh"></i></a>
+									<a href="#"><i class="pe-7s-close"></i></a>
+								</div>
+							</header>
+
+							<div class="widget__content filled">
+								<h3>Unlimited Usage Granted:</h3>
+								<p>You have the right to use Pixeden web templates on as many sites as you want. After your membership expires, you may continue to use the templates with no time restrictions.</p>
+
+								<h3>License:</h3>
+								<p>Pixeden web templates are GPL compliant. All PHP portions of the templates, themes and styles are licensed under the appropriate GPL license of the platform (Bootstrap, Wordpress etc…). The non-compiled portions including source file, images, cascading style sheets and JavaScript are licensed under the The “Pixeden Proprietary Use License" in accordance with the rest of these Terms of Service.</p>
+
+								<h3>Modifications:</h3>
+								<p>You are authorized to make any necessary modification(s) to our web templates to fit your purposes. You may not however redistribute or release non-GPL portions of the templates as GPL or otherwise. You may remove our copyright from the footer of the web templates if needed. Porting non-GPL portions of our templates to other platforms and content management systems and redistributing as GPL or otherwise is also strictly prohibited. Please contact us if you have any requirements that are not covered by these terms.</p>
+
+								<h3>Unauthorized use:</h3>
+								<p>You may not place any non-GPL portions of our templates, modified or unmodified, on any medium and offer them for redistribution or resale of any kind without prior written consent from Pixeden. Please contact us if you require more clarification. All templates are always designed for the latest version of the platform they are designed for, as such we can give no guarantee that the templates will run with previous versions of those platforms.</p>
+								
+								<h3>Assignability:</h3>
+								<p>You may not sub-license, assign, or transfer this license or Pixeden subscription to anyone else without prior written consent from Pixeden.</p>
+
+								<h3>Ownership:</h3>
+								<p>Our resources are provided “as is” without warranty of any kind, either expressed or implied. In no event shall Pixeden be liable for any damages including, but not limited to, direct, indirect, special, incidental or consequential damages or other losses arising out of the use of or inability to use our products.</p>
+
+								<h3>Use of Content:</h3>
+								<p>You acknowledge that our resources contain or may contain material (collectively the “Content”) which is protected by copyright, trademark or other proprietary rights; therefore, you are only permitted to use the material as expressly authorized by Pixeden. You may not transfer or sell, reproduce, create derivative works from, distribute, or in any way exploit any of the Content, in whole or in part, except with an expressly permitted Agreement from the developer.</p>
+
+								<h3>Refund policy:</h3>
+								<p>Since Pixeden is offering non-tangible goods we do not issue refunds after the membership is made, which you are responsible for understanding upon registering at our site.
+								We however can look at specific cases and issue an exceptional one-off refund. If you think that your case should grant you a partial or full refund please contact us.</p>
+
+								<h3>Warranty:</h3>
+								<p>Pixeden expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to the implied warranties of title, merchantability including, but not limited to merchantability of computer programs, and fitness for a particular purpose. Pixeden does not warrant or guarantee these templates in any manner. We cannot guarantee they will function with all 3rd party templates as there is currently no certification process for such components. Browser compatibility should be tested against the demonstration templates on the demo server. Please ensure that the browsers you use will work with the templates as we can not guarantee that Pixeden templates will work with all browser combinations. Some states or jurisdictions do not allow the exclusion of certain warranties. Nothing in this section should be construed as excluding or limiting any warranty beyond what is permissible under applicable law.</p>
+
+								<h3>Support:</h3>
+								<p>Pixeden offers these templates and designs ‘as is’, with no implied meaning that they will function exactly as you wish or with all 3rd party components and modules. Further, we offer no support via email or otherwise for installation, customization, administration, etc. You acknowledge by your use of the templates that it is at your sole risk, and that you assume full responsibility for all costs associated with all necessary servicing or repairs of any equipment you use in connection with the templates.</p>
+			
+								<h3>Complete terms of service:</h3>
+								<p>This specific Web Templates License completes our general terms of service that can be found on our website: <a href="http://www.pixeden.com/terms-of-use">http://www.pixeden.com/terms-of-use</a>
+							</p>
+							</div>
+						</article><!-- /widget -->
+					
+
+				</div> <!-- row -->
+
+				
+
+
+
+
+
+			
+
+
+		</section> <!-- /content -->
+
+		<footer class="footer-brand">
+				<img src="img/logo_trim.png">
+				<p>© 2014 Glazzed. All rights reserved</p>
+			</footer>
+
+	</div>
+
+
+	 
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+</body>
+</html>
