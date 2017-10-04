@@ -11,9 +11,25 @@ drukkaApp.config(function($routeProvider, $locationProvider) {
 			templateUrl: "mvc/view/Home.html", 
 			controller: "HomeController"
 		})
-		.when("/test", {
-			templateUrl: "mvc/view/Test.html", 
-			controller: "TestController"
+		.when("/ui", {
+			templateUrl: "mvc/view/Ui.html",
+			controller: "UiController"
+		})
+		.when("/grid", {
+			templateUrl: "mvc/view/Grid.html",
+			controller: "GridController"
+		})
+		.when("/tables", {
+			templateUrl: "mvc/view/Tables.html",
+			controller: "TablesController"
+		})
+		.when("/stats", {
+			templateUrl: "mvc/view/Stats.html",
+			controller: "StatsController"
+		})
+		.when("/docs", {
+			templateUrl: "mvc/view/Docs.html",
+			controller: "DocsController"
 		})
 		.otherwise({
 			templateUrl: "mvc/view/404.html"
