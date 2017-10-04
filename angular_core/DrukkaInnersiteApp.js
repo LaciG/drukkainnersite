@@ -11,7 +11,10 @@ drukkaApp.config(function($routeProvider, $locationProvider) {
 			templateUrl: "mvc/view/Home.html", 
 			controller: "HomeController"
 		})
-
+		.when("/test", {
+			templateUrl: "mvc/view/Test.html", 
+			controller: "TestController"
+		})
 		.otherwise({
 			templateUrl: "mvc/view/404.html"
 		})
